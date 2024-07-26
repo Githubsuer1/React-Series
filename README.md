@@ -21,7 +21,7 @@
     Props stands for properties, props is nothing but objects containing the passed data.
 
 
-    ``````javascript
+    ```js
     // passing props to a component
     <MyComponent name="john" age="30" />
 
@@ -31,7 +31,7 @@
         name:"ohn",
         age:'30'
     }
-    ``````
+    ```
 
     `````` javascript
     // accessing props in component
