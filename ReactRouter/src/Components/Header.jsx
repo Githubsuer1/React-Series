@@ -1,6 +1,11 @@
-import {NavLink, Link } from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 const Header = ()=>{
+
+
+
+
+
     return (
         <nav className="bg-gray-800 grid grid-cols-1 sm:grid-cols-2 p-3.5 sm:sticky top-0">
             <div className="flex items-center" >
@@ -10,38 +15,38 @@ const Header = ()=>{
                 Siddhant Mishra</NavLink>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-4 items-center sm:justify-items-center gap-1.5 mt-2">
+            <div className={`grid grid-cols-1 sm:grid-cols-4  items-center sm:justify-items-center gap-1.5 mt-2` }>
 
                 <NavLink 
                     className={({isActive})=>`sm:bg-transparent bg-gray-600 text-white text-md sm:text-lg font-bold px-1.5 rounded 
-                    ${isActive ? " text-red-300" : "" }`} 
+                    ${ isActive ? "text-red-500" : "text-white" }`} 
                     to='/contact'
                 >
-                Contact Me</NavLink>
+                Connect Me</NavLink>
+
+                
 
                 <NavLink 
                     className={({isActive})=>`sm:bg-transparent bg-gray-600 text-white text-md sm:text-lg font-bold px-1.5 rounded 
-                    ${isActive ? " text-red-300" : "" }`} 
-                    to='/about'
+                    ${isActive ? "text-red-500" : "text-white" }`} 
+                    to=''
                 >
                 About Me</NavLink>
 
                 <NavLink 
                     className={({isActive})=>`sm:bg-transparent bg-gray-600 text-white text-md sm:text-lg font-bold px-1.5 rounded 
-                    ${isActive ? " text-red-300" : "" }`} 
-                    to=''
+                    ${isActive ? "text-red-500" : "text-white" }`} 
+                    to='/work'
                 >
-                Home</NavLink>
+                Project</NavLink>
 
                 <NavLink 
                     className={({isActive})=>`sm:bg-transparent bg-gray-600 text-white text-md sm:text-lg font-bold px-1.5 rounded 
-                    ${isActive ? " text-red-300" : "" }`} 
-                    to='/work'
+                    ${isActive ? "text-red-500" : "text-white" }`} 
+                    to='/skills'
                 >
-                Projects</NavLink>
-
+                Skills</NavLink>
             </div>
-
         </nav>
     )
 }
